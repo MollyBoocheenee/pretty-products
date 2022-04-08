@@ -1,0 +1,49 @@
+html {
+  box-sizing: border-box;
+  line-height: 1.5;
+  background-color: #fff;
+  font-family: Karma, serif;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #6f00e7;
+  font-family: Oswald, sans-serif;
+  margin: 1.5rem;
+}
+
+p {
+  font-size: 1.4rem;
+  color: #000;
+  font-family: Karma, serif;
+  font-weight: normal;
+  margin: .25em;
+}
+
+ol {
+  display: grid;
+  margin: 0;
+  padding: 1rem 0;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  border: 3px solid #987ffa;
+  border-radius: 6px;
+}
+
+.cart {
+  background-color: #6f00e7;
+}
