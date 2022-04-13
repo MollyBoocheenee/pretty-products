@@ -3,6 +3,7 @@ html {
   line-height: 1.5;
   background-color: #fff;
   font-family: Karma, serif;
+  text-align: center;
 }
 
 *, *::before, *::after {
@@ -13,7 +14,8 @@ h2 {
   font-size: 2rem;
   color: #6f00e7;
   font-family: Oswald, sans-serif;
-  margin: 1.5rem;
+  align-items: flex-end;
+  text-align: center;
 }
 
 p {
@@ -21,19 +23,17 @@ p {
   color: #000;
   font-family: Karma, serif;
   font-weight: normal;
-  margin: .25em;
+  margin: 0;
 }
 
 ol {
   display: grid;
-  margin: 0;
-  padding: 1rem 0;
+  padding: 0 .5em 1.5em .7em;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
 }
 
-li {
-  margin: 0;
+ol > li {
   padding: 0;
   list-style-type: none;
   display: flex;
@@ -44,6 +44,44 @@ li {
   border-radius: 6px;
 }
 
+ul > li {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+ul {
+  display: inline-flex;
+  margin: 1.5rem;
+  width: 100%;
+}
+
 .cart {
   background-color: #6f00e7;
+  border-radius: 3em;
+}
+
+.cart span {
+  color: #fff;
+  text-decoration: none;
+  font-family: Oswald, sans-serif;
+}
+
+.image {
+  width: 250px;
+  align-self: center;
+  padding: 1rem 0;
+}
+
+.favourite {
+  border: none;
+  justify-content: flex-end;
+}
+
+.share {
+  border: none;
+  justify-content: flex-end;
 }
