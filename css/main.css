@@ -16,6 +16,7 @@ h2 {
   font-family: Oswald, sans-serif;
   align-items: flex-end;
   text-align: center;
+  margin: auto;
 }
 
 p {
@@ -24,17 +25,19 @@ p {
   font-family: Karma, serif;
   font-weight: normal;
   margin: 0;
+  padding-bottom: 1em;
 }
 
 ol {
   display: grid;
-  padding: 0 .5em 1.5em .7em;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
+  padding: .25em;
+  margin: auto;
 }
 
 ol > li {
-  padding: 0;
+  padding: 0 1rem 1rem;
   list-style-type: none;
   display: flex;
   flex-direction: column;
@@ -49,19 +52,28 @@ ul > li {
   display: flex;
   justify-content: space-between;
   margin: 0;
-  padding: 0;
+  padding: .5em 1.5em .7em;
   align-items: center;
 }
 
 ul {
-  display: inline-flex;
-  margin: 1.5rem;
+  display: flex;
+  justify-content: space-between;
   width: 100%;
+  padding-left: 0;
+}
+
+ul a {
+  display: flex;
+  justify-content: start;
+  align-items: center;
 }
 
 .cart {
   background-color: #6f00e7;
   border-radius: 3em;
+  margin-right: auto;
+  padding: .5em 1.5em .7em;
 }
 
 .cart span {
@@ -71,9 +83,9 @@ ul {
 }
 
 .image {
-  width: 250px;
+  width: 280px;
   align-self: center;
-  padding: 1rem 0;
+  padding: 1rem;
 }
 
 .favourite {
